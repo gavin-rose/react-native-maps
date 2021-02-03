@@ -24,7 +24,7 @@
     NSMutableArray<GMUWeightedLatLng *> *w = [NSMutableArray arrayWithCapacity:points.count];
     for (int i = 0; i < points.count; i++) {
         CLLocationCoordinate2D coord = [RCTConvert CLLocationCoordinate2D:points[i]];
-        float intensity = 1.0;
+        float intensity = 2.0;
         if (points[i][@"weight"] != nil) {
             intensity = [RCTConvert float:points[i][@"weight"]];
         }
